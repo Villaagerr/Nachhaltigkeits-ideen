@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to bottom left, rgb(73, 209, 61), rgb(167, 250, 225));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+img {
+    width: 333px;
+    margin: 30px;
+    transition: transform 0.8s;
+    border-radius: 2.5vh;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#Box {
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    font-size: 225px;
+    text-align: center;
+    animation: hi;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: infinite;
+    animation-duration: 5s;
+    background-image: url("erde.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.1s;
+}
+
+@keyframes hi {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 500%;
+}
+
+h2 {
+    color: rgb(240, 255, 249);
+    margin-top: 15px;
+    font-size: 175%;
+}
+
