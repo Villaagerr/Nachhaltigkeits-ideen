@@ -6,38 +6,31 @@ body {
     background-position: center;
 }
 
-img {
-    width: 333px;
-    margin: 30px;
-    transition: transform 0.8s;
-    border-radius: 2.5vh;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
-}
 
-#Box {
-    height: 250px;
-    width: 250px;
-    background-color: aqua;
+
+img {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
     font-size: 225px;
     text-align: center;
-    animation: hi;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: infinite;
-    animation-duration: 5s;
-    background-image: url("erde.png");
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.1s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    margin: 50px;
 }
 
-@keyframes hi {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+@keyframes myAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
+
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(249, 255, 252);
     margin-top: 15px;
     font-size: 500%;
 }
@@ -46,5 +39,6 @@ h2 {
     color: rgb(240, 255, 249);
     margin-top: 15px;
     font-size: 175%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
